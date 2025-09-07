@@ -1,0 +1,97 @@
+.introSection {
+    background: linear-gradient(90deg, #1B3C53 80%, #27496d 100%);
+    color: #F9F3EF;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 15px #d2c1b655;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    scroll-margin-top: 16rem;
+    /* Adjust to your navbar height */
+}
+
+.introContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.introGreeting {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #D2C1B6;
+}
+
+.introName {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #F9F3EF;
+    letter-spacing: 0.04em;
+}
+
+.introRole {
+    font-size: 1.2rem;
+    color: #F9F3EF;
+    margin: 0;
+}
+
+.introRole strong {
+    color: #D2C1B6;
+    font-weight: 700;
+}
+
+.introDesc {
+    font-size: 1.05rem;
+    color: #F9F3EF;
+    margin-bottom: 1.5rem;
+}
+
+.desktopMenuBtn {
+    /* Uses navbar button styles for consistency */
+    align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+    .introSection {
+        max-width: 95vw;
+        padding: 2rem 1rem;
+    }
+
+    .introName {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .introSection {
+        padding: 1.2rem 0.5rem;
+        border-radius: 1rem;
+        margin: 1rem auto;
+    }
+
+    .introName {
+        font-size: 1.2rem;
+    }
+
+    .introGreeting {
+        font-size: 1rem;
+    }
+
+    .introRole,
+    .introDesc {
+        font-size: 0.95rem;
+    }
+
+    .desktopMenuBtn {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+}

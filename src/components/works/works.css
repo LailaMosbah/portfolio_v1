@@ -1,0 +1,165 @@
+.worksSection {
+    background: linear-gradient(90deg, #1B3C53 80%, #27496d 100%);
+    color: #F9F3EF;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px #d2c1b655;
+}
+
+.worksTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #D2C1B6;
+    margin-bottom: 2rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.worksList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.worksListItem {
+    background: #27496d33;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px #d2c1b644;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+    /* min-height: 340px; */
+}
+
+.worksListItem:hover {
+    box-shadow: 0 8px 24px #d2c1b655;
+    transform: translateY(-4px) scale(1.03);
+}
+
+.worksListItem img {
+    width: 100%;
+    max-width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.7rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 8px #d2c1b644;
+    background: #1B3C53;
+}
+
+.worksDemoBtn {
+    background: linear-gradient(90deg, #D2C1B6 60%, #F9F3EF 100%);
+    color: #1B3C53;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.7rem 1.7rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #d2c1b644;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.worksDemoBtn:hover {
+    background: linear-gradient(90deg, #F9F3EF 60%, #D2C1B6 100%);
+    color: #27496d;
+    box-shadow: 0 4px 16px #d2c1b655;
+    /* text-decoration: underline; */
+}
+
+.worksGithubTitle {
+    text-align: center;
+    color: #D2C1B6;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.worksGithubBtn {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, #F9F3EF 60%, #D2C1B6 100%);
+    color: #27496d;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #d2c1b644;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.worksGithubBtn:hover {
+    background: linear-gradient(90deg, #D2C1B6 60%, #F9F3EF 100%);
+    color: #1B3C53;
+    box-shadow: 0 4px 16px #d2c1b655;
+    /* text-decoration: underline; */
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .worksSection {
+        max-width: 98vw;
+        padding: 2rem 1rem;
+    }
+
+    .worksList {
+        gap: 1.2rem;
+    }
+
+    .worksListItem img {
+        max-width: 180px;
+        height: 110px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .worksSection {
+        padding: 1.2rem 0.5rem;
+        border-radius: 1rem;
+        margin: 1rem auto;
+    }
+
+    .worksTitle {
+        font-size: 1.4rem;
+    }
+
+    .worksList {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .worksListItem {
+        padding: 0.8rem 0.5rem;
+        min-height: 220px;
+    }
+
+    .worksListItem img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+        object-fit: contain;
+        border-radius: 0.7rem;
+        margin-bottom: 1rem;
+        background: #1B3C53;
+        box-shadow: 0 2px 8px #d2c1b644;
+    }
+
+    .worksDemoBtn {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
